@@ -1,5 +1,7 @@
 #gallery {
-
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row-reverse;
 }
 
 .image {
@@ -7,10 +9,14 @@
   height: 250px;
   background-color: lightblue;
   border: 1px solid white;
+
+  flex: 33%;
+  object-fit: cover; /* this will alter the behaviour of images that will be stretched out by default in the flex */
 }
 
 .large {
-
+  flex: 66%;
+  object-fit: cover;
 }
 
 .first {
