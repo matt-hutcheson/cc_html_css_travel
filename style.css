@@ -1,20 +1,198 @@
+body {
+    font-family: 'Arvo', serif;
+    color: #34314c;
+}
+
 header {
-    background-color: skyblue;
+    background-color: #47b8e0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    color: ghostwhite;
 }
 
 header > h1 {
-    font-size: medium;
+    font-size: large;
     padding-left: 64px;
 }
 
-header > nav {
+header > nav > ul {
     display: flex;
     flex-flow: row;
+    list-style: none;
+    margin-right: 5px;
 }
 
-header > nav > ul {
+header > nav > ul > li {
+    padding: 10px;
+    background-color: #34314c;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+nav > ul > li > a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: smaller;
+    padding: 10px;
+
+}
+
+.explore-now > ul {
+    display: grid;
+    grid-template-areas: 
+        'li li li';
+    text-align: center;
+    
+}
+
+.explore-now > ul > li {
     list-style: none;
+    padding: 10px;
+}
+
+.search {
+    background-color: #34314c;
+    color: ghostwhite;
+}
+
+.search > h3 {
+    padding: 20px 0 5px 20px;
+}
+
+.search > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.search > ul > li {
+    padding: 5px 10px 20px 0px;
+    list-style: none;
+}
+
+#destination, #travel-date, #travel-type-select, #button-search {
+    height: 35px;
+    width: 140px
+}
+
+#button-search {
+    background-color: #ff7473;
+}
+
+#button-search:hover {
+    background-color: #ffc952;
+}
+
+.popular-destinations > hgroup {
+    text-align: center;
+}
+
+h3 {
+    font-size: small;
+}
+
+.gallery > ul {
+    display: grid;
+    grid-template-areas: 
+        'li li li'
+        'li li li';
+    text-align: center;
+
+    list-style: none;
+}
+
+.gallery > ul > li {
+    padding: 10px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.popular-places > section > ul {
+    display: grid;
+    grid-template-areas: 
+        'li li li'
+        'li li li';
+    text-align: center;
+    list-style: none;
+}
+
+.popular-places > section > ul > li {
+    padding: 10px;
+}
+
+.location {
+    color: #34314c;
+    margin: 10px 0px 2px 0px;
+}
+
+.country {
+    font-size: small;
+    margin: 2px 0px 0px 0px;
+    padding-top: 2px;
+}
+
+.reviews {
+    background-color: #34314c;
+    color: ghostwhite;
+    margin-bottom: 0;
+}
+
+.reviews > ul {
+    display: grid;
+    grid-template-areas: 
+        'li li li';
+    list-style: none;
+    text-align: center;
+}
+
+.user-name {
+    color: gray;
+}
+
+footer {
+    background-color: #47b8e0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#sitemap > ul {
+    display: grid;
+    grid-template-areas: 
+        'li li'
+        'li li';
+    
+}
+
+#sitemap > ul > li {
+    margin: 15px;
+}
+
+#sitemap > ul > li > a {
+    color: #54546c;
+    text-decoration: none;
+}
+
+#contact {
+    margin-right: 50px;
+}
+
+#contact > ul {
+    list-style: none;
+}
+
+#contact > ul > li {
+    color: #54546c;
+}
+
+#contact > ul > li > a {
+    color: #54546c;
+}
+
+.img-round {
+    border-radius: 50%;
 }

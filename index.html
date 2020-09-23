@@ -4,36 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<header>
-    <h1>CC Travel</h1>
-    <nav>
-        <ul>
-            <li>
-                <button>
-                    Home
-                </button>
-            </li>
-            <li>
-                <button>
-                    About
-                </button>
-            </li>
-            <li>
-                <button>
-                    Blog
-                </button>
-            </li>
-            <li>
-                <button>
-                    Contact
-                </button>
-            </li>
-        </ul>
-    </nav>
-</header>
 <body>
+    <header>
+        <h1>CC Travel</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/home">Home</a>
+                </li>
+                <li>
+                    <a href="/about">About</a>
+                </li>
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <section class = "explore-now">
         <ul>
             <li>
@@ -58,7 +51,7 @@
         <ul>
             <li>
                 <input type="text" id="destination" name="destination" required
-                minlength="1" maxlength="20" size="10" placeholder="where to go?">
+                minlength="1" maxlength="20" size="20" placeholder="Where to go?">
             </li>
             <li>
                 <input type="date" id="travel-date" name="travel-date" required
@@ -66,7 +59,7 @@
             </li>
             <li>
                 <select name="travel-type" id="travel-type-select">
-                    <option value="">Travel type</option>
+                    <option disabled="disabled" selected="selected" value="">Travel type</option>
                     <option value="car">Car</option>
                     <option value="bus">Bus</option>
                     <option value="train">Train</option>
@@ -76,7 +69,7 @@
                 </select>
             </li>
             <li>
-                <button>
+                <button id="button-search">
                     Search
                 </button>
             </li>
@@ -135,42 +128,40 @@
                         <li>
                             <a href="">
                                 <img src="http://placebear.com/320/200" alt="">
-                            
                                 <p class = "location">California</p>
-                                <p class = "country">United State of America</p>
+                            </a>
+                            <p class = "country">United State of America</p>
                                 
 
-                            </a>
+
                         </li>
                         <li>
                             <a href="">
                                 <img src="http://placebear.com/320/200" alt="">
-                            
                                 <p class = "location">Korola Megna</p>
-                                <p class = "country">United State of America</p>
+                            </a>
+                            <p class = "country">United State of America</p>
                                 
 
-                            </a>
+
                         </li>
                         <li>
                             <a href="">
                                 <img src="http://placebear.com/320/200" alt="">
-                            
                                 <p class = "location">London</p>
-                                <p class = "country">United Kingdom</p>
-                                
-
                             </a>
+                            <p class = "country">United Kingdom</p>
                         </li>
                         <li>
                             <a href="">
                                 <img src="http://placebear.com/320/200" alt="">
                             
                                 <p class = "location">Miami Beach</p>
-                                <p class = "country">United State of America</p>
+                            </a>
+                            <p class = "country">United State of America</p>
                                 
 
-                            </a>
+
                         </li>
                         <li>
                             <a href="">
@@ -197,7 +188,7 @@
                     <ul>
                         <li>
                             <a href="">
-                                <img src="http://placebear.com/200/200" alt="reviewer 1">
+                                <img class="img-round" src="http://placebear.com/200/200" alt="reviewer 1">
                             </a>
                             <p class = "user-comment">
                                 "The happiesnt place on earth!"
@@ -209,7 +200,7 @@
                         </li>
                         <li>
                             <a href="">
-                                <img src="http://placebear.com/200/200" alt="reviewer 2">
+                                <img class="img-round" src="http://placebear.com/200/200" alt="reviewer 2">
                             </a>
                             <p class = "user-comment">
                                 "Not what I expected, it was a lot of walking."
@@ -221,7 +212,7 @@
                         </li>
                         <li>
                             <a href="">
-                                <img src="http://placebear.com/200/200" alt="reviewer 3">
+                                <img class="img-round" src="http://placebear.com/200/200" alt="reviewer 3">
                             </a>
                             <p class = "user-comment">
                                 "It was nice while it lasted."
@@ -236,39 +227,39 @@
             </section>
         </article>
     </main>
-    
+    <footer>
+        <header id = "footer-header">
+            <h1>CC Travel</h1>
+        </header>
+        <section id = "sitemap">
+            <ul>
+                <li>
+                    <a href="/pricing">Pricing</a>
+                </li>
+                <li>
+                    <a href="/about">About</a>
+                </li>
+                <li>
+                    <a href="/gallery">Gallery</a>
+                </li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+            </ul>
+        </section>
+        <section id = "contact">
+            <ul>
+                <li>123 Floor</li>
+                <li>Street Edinburg EH1 2BC</li>
+                <li>
+                    <a href="/phone_number">0131 234 9734</a>
+                </li>
+                <li>
+                    <a href="mailto:contact@cctravel.com">contact@cctravel.com</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
 </body>
-<footer>
-    <header id = "footer-header">
-        <h1>CC Travel</h1>
-    </header>
-    <section id = "sitemap">
-        <ul>
-            <li>
-                <a href="/pricing">Pricing</a>
-            </li>
-            <li>
-                <a href="/about">About</a>
-            </li>
-            <li>
-                <a href="/gallery">Gallery</a>
-            </li>
-            <li>
-                <a href="/contact">Contact</a>
-            </li>
-        </ul>
-    </section>
-    <section id = "contact">
-        <ul>
-            <li>123 Floor</li>
-            <li>Street Edinburg EH1 2BC</li>
-            <li>
-                <a href="/phone_number">0131 234 9734</a>
-            </li>
-            <li>
-                <a href="mailto:contact@cctravel.com">contact@cctravel.com</a>
-            </li>
-        </ul>
-    </section>
-</footer>
+
 </html>
