@@ -7,14 +7,80 @@
     <title>Document</title>
 </head>
 <header>
-
+    <h1>CC Travel</h1>
+    <nav>
+        <ul>
+            <li>
+                <button>
+                    Home
+                </button>
+            </li>
+            <li>
+                <button>
+                    About
+                </button>
+            </li>
+            <li>
+                <button>
+                    Blog
+                </button>
+            </li>
+            <li>
+                <button>
+                    Contact
+                </button>
+            </li>
+        </ul>
+    </nav>
 </header>
 <body>
     <section class = "explore-now">
-
+        <ul>
+            <li>
+                <a href="">
+                    <img src="http://placebear.com/300/150" alt="explore now image 1">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="http://placebear.com/300/150" alt="explore now image 2">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="http://placebear.com/300/150" alt="explore now image 3">
+                </a>
+            </li>
+        </ul>
     </section>
     <section class = "search">
-
+        <h3>Where do you want to go?</h3>
+        <ul>
+            <li>
+                <input type="text" id="destination" name="destination" required
+                minlength="1" maxlength="20" size="10" placeholder="where to go?">
+            </li>
+            <li>
+                <input type="date" id="travel-date" name="travel-date" required
+                minlength="1" maxlength="20" size="10" placeholder="dd//mm/yy">
+            </li>
+            <li>
+                <select name="travel-type" id="travel-type-select">
+                    <option value="">Travel type</option>
+                    <option value="car">Car</option>
+                    <option value="bus">Bus</option>
+                    <option value="train">Train</option>
+                    <option value="plane">Plane</option>
+                    <option value="foot">Foot</option>
+                    <option value="unicycle">Unicycle</option>
+                </select>
+            </li>
+            <li>
+                <button>
+                    Search
+                </button>
+            </li>
+        </ul>
     </section>
     <main>
         <article class = "popular-destinations">
@@ -26,33 +92,33 @@
                 <ul>
                     <li>
                         <a href="">
-                            <img src="" alt="">
+                            <img src="http://placebear.com/300/225" alt="popular destination image 1">
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="" alt="">
+                            <img src="http://placebear.com/300/225" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="" alt="">
+                            <img src="http://placebear.com/300/225" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="" alt="">
+                            <img src="http://placebear.com/300/225" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="" alt="">
+                            <img src="http://placebear.com/300/225" alt="">
                         
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="" alt="">
+                            <img src="http://placebear.com/300/225" alt="">
                         </a>
                     </li>
                 </ul>
@@ -68,7 +134,7 @@
                     <ul>
                         <li>
                             <a href="">
-                                <img src="" alt="">
+                                <img src="http://placebear.com/320/200" alt="">
                             
                                 <p class = "location">California</p>
                                 <p class = "country">United State of America</p>
@@ -78,7 +144,7 @@
                         </li>
                         <li>
                             <a href="">
-                                <img src="" alt="">
+                                <img src="http://placebear.com/320/200" alt="">
                             
                                 <p class = "location">Korola Megna</p>
                                 <p class = "country">United State of America</p>
@@ -88,7 +154,7 @@
                         </li>
                         <li>
                             <a href="">
-                                <img src="" alt="">
+                                <img src="http://placebear.com/320/200" alt="">
                             
                                 <p class = "location">London</p>
                                 <p class = "country">United Kingdom</p>
@@ -98,7 +164,7 @@
                         </li>
                         <li>
                             <a href="">
-                                <img src="" alt="">
+                                <img src="http://placebear.com/320/200" alt="">
                             
                                 <p class = "location">Miami Beach</p>
                                 <p class = "country">United State of America</p>
@@ -108,7 +174,7 @@
                         </li>
                         <li>
                             <a href="">
-                                <img src="" alt="">
+                                <img src="http://placebear.com/320/200" alt="">
                             
                                 <p class = "location">California</p>
                                 <p class = "country">United State of America</p>
@@ -118,7 +184,7 @@
                         </li>
                         <li>
                             <a href="">
-                                <img src="" alt="">
+                                <img src="http://placebear.com/320/200" alt="">
                                 <p class = "location">Saintmartine Iceland</p>
                                 <p class = "country">Iceland</p>
                                 
@@ -131,35 +197,38 @@
                     <ul>
                         <li>
                             <a href="">
-                                <img src="" alt="">
-                                <p class = "user-comment">
-                                    
-                                </p>
-                                <p class = "user-name">
-
-                                </p>
+                                <img src="http://placebear.com/200/200" alt="reviewer 1">
+                            </a>
+                            <p class = "user-comment">
+                                "The happiesnt place on earth!"
+                            </p>
+                            <p class = "user-name">
+                                - Mickey Mouse
+                            </p>
+                            
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="http://placebear.com/200/200" alt="reviewer 2">
+                            </a>
+                            <p class = "user-comment">
+                                "Not what I expected, it was a lot of walking."
+                            </p>
+                            <p class = "user-name">
+                                - Samwise Gamgee
+                            </p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="" alt="">
-                                <p class = "user-comment">
-
-                                </p>
-                                <p class = "user-name">
-
-                                </p>
+                                <img src="http://placebear.com/200/200" alt="reviewer 3">
                             </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="" alt="">
-                                <p class = "user-comment">
-
-                                </p>
-                                <p class = "user-name">
-
-                                </p>
+                            <p class = "user-comment">
+                                "It was nice while it lasted."
+                            </p>
+                            <p class = "user-name">
+                                - Darth Vader
+                            </p>
                             </a>
                         </li>
                     </ul>
@@ -168,10 +237,38 @@
         </article>
     </main>
     
-
-            
-    <main>
-
-    </main>
 </body>
+<footer>
+    <header id = "footer-header">
+        <h1>CC Travel</h1>
+    </header>
+    <section id = "sitemap">
+        <ul>
+            <li>
+                <a href="/pricing">Pricing</a>
+            </li>
+            <li>
+                <a href="/about">About</a>
+            </li>
+            <li>
+                <a href="/gallery">Gallery</a>
+            </li>
+            <li>
+                <a href="/contact">Contact</a>
+            </li>
+        </ul>
+    </section>
+    <section id = "contact">
+        <ul>
+            <li>123 Floor</li>
+            <li>Street Edinburg EH1 2BC</li>
+            <li>
+                <a href="/phone_number">0131 234 9734</a>
+            </li>
+            <li>
+                <a href="mailto:contact@cctravel.com">contact@cctravel.com</a>
+            </li>
+        </ul>
+    </section>
+</footer>
 </html>
